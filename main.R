@@ -1,3 +1,9 @@
+library('keboola.r.docker.application')
+
+# intialize application
+app <- DockerApplication$new('/data/')
+app$readConfig()
+
 # read input
 data <- read.csv("/data/in/tables/source.csv");
 
